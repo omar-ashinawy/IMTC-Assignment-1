@@ -1,9 +1,8 @@
-# Interactive Elements Demo - Unity Project
+# IMTC505 Assignment 1
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
-- [Installation & Setup](#installation--setup)
 - [How the Code Works](#how-the-code-works)
   - [1. PlayerCubeController](#1-playercubecontroller)
   - [2. CameraFollow](#2-camerafollow)
@@ -15,8 +14,6 @@
 - [System Architecture](#system-architecture)
 - [Controls](#controls)
 - [Technical Details](#technical-details)
-- [Customization](#customization)
-- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -73,46 +70,6 @@ This Unity project demonstrates **7 different interactive elements** showcasing 
    - Dynamic instructions
    - Toggle visibility
    - Auto-configuration
-
----
-
-## Installation & Setup
-
-### Prerequisites
-- Unity 2021.3 or later
-- Basic understanding of Unity Editor
-
-### Quick Start
-
-1. **Create New Unity Project**
-   ```
-   - Open Unity Hub
-   - New Project → 3D (Core or URP)
-   - Name: "Interactive Elements Demo"
-   ```
-
-2. **Configure Input System**
-   ```
-   Edit → Project Settings → Player → Other Settings
-   Active Input Handling → "Input Manager (Old)" or "Both"
-   Restart Unity
-   ```
-
-3. **Create Scripts Folder**
-   ```
-   Assets → Right Click → Create → Folder → "Scripts"
-   ```
-
-4. **Add All Scripts**
-   - Copy all 7 scripts into the Scripts folder
-   - Wait for compilation
-
-5. **Build Scene Hierarchy**
-   - Follow the setup guide to create GameObjects
-   - Attach appropriate scripts
-   - Configure Inspector values
-
-6. **Press Play!**
 
 ---
 
