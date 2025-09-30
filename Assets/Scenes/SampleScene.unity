@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dce7596212a4ad3950d416060586752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BouncingBall
-  bounceForce: 8
+  bounceForce: 5
   bounceInterval: 3
   continuousBounce: 1
   bouncyMaterial: {fileID: 0}
