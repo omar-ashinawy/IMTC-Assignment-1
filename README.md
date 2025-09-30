@@ -180,7 +180,7 @@ void SpawnTrailSphere()
 void UpdateTrailColor()
 {
     float hue = (Time.time * colorChangeSpeed * 0.1f) % 1f;
-    currentTrailColor = Color.HSV(hue, 0.8f, 1f);
+    currentTrailColor = Color.HSVToRGB(hue, 0.8f, 1f);
 }
 ```
 
@@ -188,7 +188,7 @@ void UpdateTrailColor()
 - `Time.time` is total seconds since game start
 - Multiply by `colorChangeSpeed` to control how fast colors change
 - `% 1f` keeps hue value between 0 and 1 (wraps around)
-- `Color.HSV()` converts HSV (Hue, Saturation, Value) to RGB
+- `Color.HSVToRGB()` converts HSV (Hue, Saturation, Value) to RGB
 - Hue cycles through rainbow: 0=red, 0.33=green, 0.66=blue, 1=red again
 - Saturation at 0.8 (80%) gives vibrant but not oversaturated colors
 - Value at 1.0 (100%) gives maximum brightness
@@ -345,7 +345,7 @@ transform.localScale = originalScale * scale;
 **C. Color Cycling**
 ```csharp
 float hue = (Time.time * colorChangeSpeed * 0.1f) % 1f;
-platformRenderer.material.color = Color.HSV(hue, 0.6f, 0.9f);
+platformRenderer.material.color = Color.HSVToRGB(hue, 0.6f, 0.9f);
 ```
 
 **Explanation:**
@@ -578,7 +578,7 @@ void Update()
 {
     float speed = rb.velocity.magnitude;
     float hue = Mathf.Clamp01(speed / 20f);
-    ballRenderer.material.color = Color.HSV(hue, 0.8f, 1f);
+    ballRenderer.material.color = Color.HSVToRGB(hue, 0.8f, 1f);
 }
 ```
 
