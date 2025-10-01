@@ -727,7 +727,7 @@ void SetupUIReferences()
         GameObject welcomeObj = GameObject.Find("WelcomeText");
         if (welcomeObj != null)
         {
-            welcomeText = welcomeObj.GetComponent<Text>();
+            welcomeText = welcomeObj.GetComponent<TextMeshProUGUI>();
         }
     }
 }
@@ -748,7 +748,7 @@ void SetupUIReferences()
 - Relatively slow, so only done once in Start()
 
 **Component Retrieval:**
-- `GetComponent<Text>()` finds Text component on GameObject
+- `GetComponent<TextMeshProUGUI>()` finds Text (TextMeshProUGUI to be compatible with the new TextMeshPro) component on GameObject
 - Returns null if component doesn't exist
 - Type-safe retrieval
 
